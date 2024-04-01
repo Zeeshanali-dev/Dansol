@@ -10,12 +10,13 @@ function OpenAccount() {
           <section className='my-28'>
               <Container>
                   <div className='md:relative md:before:absolute md:before:bg-[#307BC9]  md:before:-right-[12px] md:before:top-3 md:before:rounded-[10px] md:before:-z-10 md:before:w-full md:before:h-full'>
-                      <div className='px-6 py-8 md:px-28 md:py-10 lg:px-36 lg:py-16 bg-[#F0F3F7] rounded-[10px] '>
+                      <form action="">
+                      <div className='px-6 py-8 md:px-28 md:py-10 lg:px-36 lg:py-16 bg-[#F0F3F7] rounded-[10px]  border border-[#C8CDD5] '>
                           <div className='text-center mb-6'>
                               <h3 className=' text-[28px] sm:text-[40px] leading-[48px] font-bold'>Register With Densol</h3>
                               
                           </div>
-                          <div className=''>
+                          <div className='block lg:grid grid-cols-2 gap-7 mb-12'>
                               <Input
                                   label="Registered Business Name*"
                                   type="text"
@@ -46,100 +47,100 @@ function OpenAccount() {
                               />
                               
                           </div>
-                          <div>
-                              <div><h2>Billing Address</h2></div>
+                          <div className='mb-12'>
+                              <div><h2 className='font-bold text-[28px] mb-6'>Billing Address</h2></div>
                               <div>
                               <Input
                                   label="Suite/Unit No "
                                   type="text"
                                   placeholder='Enter Unit no'
-                                  bdclassName=''
+                                  bdclassName='mb-5'
                                   required='required'
                               />
                               </div>
-                              <div>
+                              <div className='block lg:grid grid-cols-2 gap-7 '>
                               <Input
                                   label="Street *"
                                   type="text"
                                   placeholder='Your street'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                    <Input
                                   label="Postal Code* "
                                   type="text"
                                   placeholder='Your code'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                    <Input
                                   label="City*"
                                   type="text"
                                   placeholder='Your city'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                    <Input
                                   label="State*"
                                   type="text"
                                   placeholder='Your state'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                   
                               </div>
                           </div>
-                          <div>
-                          <div><h2>Delivery address </h2></div>
+                          <div  className='mb-12'>
+                          <div><h2 className='font-bold text-[28px] mb-6'>Delivery address </h2></div>
                               <div>
                               <Input
                                   label="Suite/Unit No "
                                   type="text"
                                   placeholder='Yur building'
-                                  bdclassName=''
+                                  bdclassName='mb-5'
                                   required='required'
                               />
                               </div>
-                              <div>
+                              <div className='block lg:grid grid-cols-2 gap-7 '>
                               <Input
                                   label="Street "
                                   type="text"
                                   placeholder='Your street'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                    <Input
                                   label="Postal Code "
                                   type="text"
                                   placeholder='Your code'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                    <Input
                                   label="City"
                                   type="text"
                                   placeholder='ciy name'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                    <Input
                                   label="State"
                                   type="text"
                                   placeholder='Your state'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                   
                               </div>
                           </div>
-                          <div>
-                              <div><h2>Contact Details</h2></div>
-                              <div>
+                          <div  className='mb-12'>
+                              <div><h2 className='font-bold text-[28px] mb-6'>Contact Details</h2></div>
+                              <div className='block lg:grid grid-cols-2 gap-7 '>
                               <Input
                                   label="Phone*"
                                   type="text"
                                   placeholder='Enter your phone'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                               <Input
@@ -153,83 +154,83 @@ function OpenAccount() {
                                   label="Email*"
                                   type="text"
                                   placeholder='Enter your email'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                               />    
                               </div>
                           </div>
-                          <div>
-                              <div><h2>Business Details</h2></div>
+                          <div  className='mb-12'>
+                              <div><h2 className='font-bold text-[28px] mb-6'>Business Details</h2></div>
                               <div>
                               <Input
                                   label="How long has the business been established? "
                                   type="text"
                                   placeholder=''
-                                  bdclassName=''
+                                  bdclassName='mb-5'
                                   required='required'
                                   />
                                   <Input
                                   label="How long have the current proprietors owned business?"
                                   type="text"
                                   placeholder=''
-                                  bdclassName=''
+                                  bdclassName='mb-5'
                                   required='required'
                               />
                               </div>
                               <div>
-                                  <ul>
-                                      <li><input type="radio" name="business" id="" /><span>Dentist </span></li>
-                                      <li><input type="radio" name="business" id="" /><span>Dental Specialist (specify) </span></li>
-                                      <li><input type="radio" name="business" id="" /><span>Laboratory</span></li>
-                                      <li><input type="radio" name="business" id="" /><span>Laboratory Specialist (specify) </span></li>
-                                      <li><input type="radio" name="business" id="" /><span>Other</span></li>
+                                  <ul className='flex gap-5 flex-wrap mt-8'>
+                                      <li className='flex items-center'><input type="radio" name="business" id="" className='w-[34px] h-[34px] mr-2' /><span>Dentist </span></li>
+                                      <li className='flex items-center'><input type="radio" name="business" id="" className='w-[34px] h-[34px] mr-2'/><span>Dental Specialist (specify) </span></li>
+                                      <li className='flex items-center'><input type="radio" name="business" id="" className='w-[34px] h-[34px] mr-2'/><span>Laboratory</span></li>
+                                      <li className='flex items-center'><input type="radio" name="business" id="" className='w-[34px] h-[34px] mr-2'/><span>Laboratory Specialist (specify) </span></li>
+                                      <li className='flex items-center'><input type="radio" name="business" id="" className='w-[34px] h-[34px] mr-2'/><span>Other</span></li>
                                   </ul>
                               </div>
                           </div>
-                          <div>
-                              <div>
-                                  <h2>Trade Reference Details</h2>
-                                  <p>Please give the names and phone numbers of two suppliers for trade reference purposes.</p>
+                          <div  className='mb-12'>
+                              <div >
+                                  <h2 className='font-bold text-[28px] mb-0'>Trade Reference Details</h2>
+                                  <p className='text-[15px] mb-5'>Please give the names and phone numbers of two suppliers for trade reference purposes.</p>
                               </div>
-                              <div>
+                              <div className='block lg:grid grid-cols-2 gap-7 '>
                               <Input
                                   label="Person1"
                                   type="text"
                                   placeholder='Name here'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                   <Input
                                   label="Phone"
                                   type="text"
                                   placeholder='Enter your phone'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                   <Input
                                   label="Person2"
                                   type="text"
                                   placeholder='Name here'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                                   <Input
                                   label="Phone"
                                   type="text"
                                   placeholder='Phone'
-                                  bdclassName=''
+                                  bdclassName='mb-5 md:mb-0'
                                   required='required'
                                   />
                               </div>
-                              <div>
-                                  <input type="checkbox" name="" id="" />
-                                  <span></span>
+                              <div className='mt-8 flex items-center'>
+                                  <input type="checkbox" name="" id="" className=' mr-2 md:mr-4 w-[34px] h-[34px]' />
+                                  <span>I agree to the Terms & Conditions</span>
                               </div>
                           </div>
                           <div>
                               <div className='max-w-full sm:max-w-[392px] flex justify-between items-center rounded-[4px] border border-[#C8C8C8] bg-white px-5 py-5 my-6'>
                                   <div className='flex items-center'>
-                                  <input type="checkbox" name="" id="" className='mr-2 md:mr-4 w-[20px] h-[20px]'/>
+                                  <input type="checkbox" name="" id="" className='mr-2 md:mr-4 w-[34px] h-[34px]'/>
                                   <span className='text-[16px] md:text-[19px]'>I’m not a robot</span>
                                   </div>
                                   <div>
@@ -242,9 +243,10 @@ function OpenAccount() {
                               </div>
                           </div>
                           <div className='flex justify-end'>
-                              <Button classname="px-12 sm:px-16 py-3 rounded-md">Send</Button>
+                              <Button classname="px-12 sm:px-20 py-4 rounded-md">Send</Button>
                           </div>
                       </div>
+                      </form>
                   </div>
               </Container>
           </section>

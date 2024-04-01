@@ -192,7 +192,7 @@ function CartDetail() {
                   </div>
                 </div>
               </div>
-              <div className="rounded-xl bg-[#C6DFED] w-full xl:w-1/23">
+              <div className="rounded-xl bg-[#C6DFED] w-full xl:w-1/3">
                 <div className="mb-4">
                   <div className="bg-[#2367AE] rounded-t-xl  px-4 py-4 text-white">
                     <h2 className="font-bold text-[22px]">Shipping</h2>
