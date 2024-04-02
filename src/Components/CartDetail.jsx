@@ -19,9 +19,8 @@ function CartDetail() {
   const [shippingFee, setShippingFee] = useState(0);
   const [Gst, setGst] = useState(0);
   const [grandTotal, setGrandTotal] = useState(0);
-  const [disable, setdisable] = useState(false)
-  const [value, setValue] = useState()
- 
+  const [disable, setdisable] = useState(false);
+  const [value, setValue] = useState();
 
   useEffect(() => {
     setIsEmpty(cartData.length <= 0);
@@ -30,9 +29,6 @@ function CartDetail() {
       newQuantities[item.id] = item.qty;
     });
     setQuantities(newQuantities);
-   
-    
-
   }, [cartData, setQuantities]);
 
   useEffect(() => {
@@ -49,11 +45,9 @@ function CartDetail() {
         parseFloat(Gst) +
         parseFloat(shippingFee)
       ).toFixed(2)
-    )
-   
+    );
   }, [quantities, cartData, totalPrice]);
 
-  
   const handlecardData = (item) => {
     dispatch(removecart(item));
   };
@@ -67,18 +61,14 @@ function CartDetail() {
   const handleDisable = (e) => {
     const Value = e.target.value;
     if (Value.length >= 1) {
-      setdisable(true)
+      setdisable(true);
       if (/^[a-zA-Z0-9]*$/.test(value)) {
         setValue(value);
-      }
-      else (
-        alert("dmething is going wron")
-      )
+      } else alert("dmething is going wron");
     } else {
-      setdisable(false)
+      setdisable(false);
     }
-    
-  }
+  };
 
   return (
     <>
@@ -154,16 +144,16 @@ function CartDetail() {
                               </div>
                             </div>
                           </td>
-                          
+
                           <td className="py-3 md:px-2 sm:align-top text-center align-bottom absolute bottom-0 right-0 sm:static ">
                             <div className="flex items-center flex-col sm:flex-row">
-                            <div className="font-medium text-[14px]  min-w-[65px]  ">
-                              Unit Price
-                            </div>
-                          
-                            <div className="text-[22px] text-[#2367AE] font-bold md:text-right min-w-[90px] md:mr-2 ">
-                              {item.price}$
-                            </div>
+                              <div className="font-medium text-[14px]  min-w-[65px]  ">
+                                Unit Price
+                              </div>
+
+                              <div className="text-[22px] text-[#2367AE] font-bold md:text-right min-w-[90px] md:mr-2 ">
+                                {item.price}$
+                              </div>
                             </div>
                           </td>
                         </tr>
@@ -176,12 +166,18 @@ function CartDetail() {
                     <input
                       type="text"
                       placeholder="Coupon Code"
-                        className=" py-3 w-full rounded-l-lg border-t border-b border-l pl-4 pr-1 outline-none   md:min-w-72"
-                        onChange={handleDisable}
-                        maxLength={8}
-                        value={value}
+                      className=" py-3 w-full rounded-l-lg border-t border-b border-l pl-4 pr-1 outline-none   md:min-w-72"
+                      onChange={handleDisable}
+                      maxLength={8}
+                      value={value}
                     />
-                    <button className={`${disable ? "bg-black text-white" : "bg-[#B9B9C4] text-black"}  flex items-center  px-4 py-[12px] text-bold rounded-r-lg absolute right-0 md:-right-[126px] cursor-pointer`}>
+                    <button
+                      className={`${
+                        disable
+                          ? "bg-black text-white"
+                          : "bg-[#B9B9C4] text-black"
+                      }  flex items-center  px-4 py-[12px] text-bold rounded-r-lg absolute right-0 md:-right-[126px] cursor-pointer`}
+                    >
                       Apply Coupon
                     </button>
                   </div>
@@ -254,7 +250,10 @@ function CartDetail() {
                     <h2 className="pr-3">Grand Total</h2>
                     <span>{grandTotal}$</span>
                   </div>
-                 <Link to="/checkout"> <Button classname="w-full py-3">Proceed the checked</Button></Link>
+                  <Link to="/checkout">
+                    {" "}
+                    <Button classname="w-full py-3">Proceed the checked</Button>
+                  </Link>
                 </div>
               </div>
             </div>
