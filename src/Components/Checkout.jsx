@@ -28,7 +28,7 @@ function Checkout() {
               Checkout
             </div>
           </div>
-          <div className="my-28">
+          <div className="my-12">
             <form action="">
               <div className="flex items-start flex-col lg:flex-row gap-6 mb-20 md:pb-20">
                 <div className="rounded-xl  w-full xl:w-2/3  mb-10 md:mb-0">

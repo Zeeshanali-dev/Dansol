@@ -12,7 +12,7 @@ function OpenAccount() {
           <div className="md:relative md:before:absolute md:before:bg-[#307BC9]  md:before:-right-[12px] md:before:top-3 md:before:rounded-[10px] md:before:-z-10 md:before:w-full md:before:h-full">
             <form action="">
               <div className="px-6 py-8 md:px-28 md:py-10 lg:px-36 lg:py-16 bg-[#F0F3F7] rounded-[10px]  border border-[#C8CDD5] ">
-                <div className="text-center mb-6">
+                <div className="text-center mb-24">
                   <h3 className=" text-[28px] sm:text-[40px] leading-[48px] font-bold">
                     Register With Densol
                   </h3>
