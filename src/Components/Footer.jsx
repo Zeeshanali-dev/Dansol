@@ -9,18 +9,18 @@ import insta from "../assets/insta.svg";
 function Footer() {
   return (
     <>
-      <footer className="bg-[#143B64]">
+      <footer className="bg-[#143B64] pb-[30px]">
         <div className=" border-b border-white ">
           <Container>
-            <div className="flex flex-col xl:flex-row">
-              <div className="text-white w-full xl:w-1/2 px-7 xl:px-0 xl:pr-20 py-7 text-[16px] sm:text-2xl text-center xl:text-start	">
-                <p>
+            <div className="flex flex-col xl:flex-row items-center pb-8 xl:pb-0">
+              <div className="text-white w-full xl:w-1/2  text-[16px] sm:text-2xl text-center xl:text-start	md:px-[78px] pt-[53px] pb-[30px]">
+                <p className="">
                   Stay up to date on techniques, product information, continuing
                   education, seminars & events, plus special promotions.
                 </p>
               </div>
-              <div className="w-[80%] xl:w-1/2 py-10 px-0 mx-auto">
-                <div className="relative ">
+              <div className="w-[80%] xl:w-1/2  mx-auto ">
+                <div className="relative max-w-[570px] px-[23px] pt-[21px]">
                   <input
                     type="text"
                     name=""
@@ -38,12 +38,12 @@ function Footer() {
         </div>
         <div>
           <Container>
-            <div className="py-10 flex flex-col sm:flex-wrap lg:flex-nowrap sm:flex-row text-white px-2 sm:px-0">
-              <div className="w-[100%] sm:w-[50%] lg:w-[35%]  pr-24 mb-6">
+            <div className="pt-12  flex flex-col sm:flex-wrap lg:flex-nowrap sm:flex-row text-white px-[35px] ">
+              <div className="w-[100%] sm:w-[50%] lg:w-[35%]  pr-24 mb-6 pl-[35px] pt-[14px]">
                 <img
                   src={footLogo}
                   alt=""
-                  className="mb-5 pt-5 cursor-pointer"
+                  className="mb-9 pt-5 cursor-pointer"
                 />
                 <p className="leading-6">
                   A company that entails the experience of more than six decades
@@ -54,7 +54,7 @@ function Footer() {
                 <ul className="flex mt-7">
                   {footSocial.map((icon) => (
                     <li
-                      className="mr-8 hover:-translate-y-2 transition-all duration-300"
+                      className="mr- hover:-translate-y-2 transition-all duration-300"
                       key={icon.id}
                     >
                       <a href={icon.href}>
@@ -64,8 +64,8 @@ function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="w-[100%] sm:w-[50%] lg:w-[22%]  mb-6">
-                <h2 className="text-[22px] mb-5 pt-5">Services</h2>
+              <div className="w-[100%] sm:w-[50%] lg:w-[23%]  mb-6">
+                <h2 className="text-[22px] mb-10 pt-6">Services</h2>
                 <ul>
                   <li className="mb-6 cursor-pointer hover:text-blue-400">
                     Pay Bills Online
@@ -84,8 +84,8 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="w-[100%] sm:w-[50%] lg:w-[22%] mb-6">
-                <h2 className="text-[22px] mb-5 pt-5">Information</h2>
+              <div className="w-[100%] sm:w-[50%] lg:w-[23%] mb-6">
+                <h2 className="text-[22px] mb-10 pt-6">Information</h2>
                 <ul>
                   <li className="mb-6 cursor-pointer hover:text-blue-400">
                     Sterilizing & Cleaning
@@ -107,8 +107,8 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="w-[100%] sm:w-[50%] md:w-[50%] lg:w-[22%] mb-6">
-                <h2 className="text-[22px] mb-5 pt-5">Contact Us</h2>
+              <div className="w-[100%] sm:w-[50%] md:w-[50%] lg:w-[23%] mb-6">
+                <h2 className="text-[22px] mb-10 pt-6">Contact Us</h2>
                 <ul>
                   <li className="mb-6 cursor-pointer hover:text-blue-400">
                     6 Moonah Ave Brookfield VIC 3338
@@ -125,12 +125,12 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="text-white flex flex-col lg:flex-row justify-between px-2 sm:px-0 pb-12 ">
+            <div className="text-white flex flex-col lg:flex-row items-center justify-center px-2 sm:px-0 pb-12 lg:pb-0 pt-2 ">
               <div className="mb-4">
                 <span>©Copyright Densol 2024</span>
               </div>
-              <div className=" w-[58%] border-b border-white hidden lg:block"></div>
-              <span>Designed & Developed By Tecmyer</span>
+              <div className=" w-[58%] border-b border-white hidden lg:block mx-6"></div>
+              <span className="block mb-4">Designed & Developed By Tecmyer</span>
             </div>
           </Container>
         </div>

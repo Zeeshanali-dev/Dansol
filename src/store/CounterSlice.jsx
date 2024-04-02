@@ -29,6 +29,7 @@ export const counterSlice = createSlice({
         (item) => item.id === action.payload.id
       );
 
+      
       if (itemToUpdate) {
         
         itemToUpdate.qty++;

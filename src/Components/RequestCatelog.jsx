@@ -20,25 +20,28 @@ function RequestCatelog() {
               </div>
               <div>
                 <Input
-                  label="Your Name*"
+                  label="Your Name"
                   type="text"
                   placeholder="Enter Your Name"
                   bdclassName="mt-4 mb-10"
                   required="required"
+                  lbclassName="after:content-['*']  after:text-black"
                 />
                 <Input
-                  label="Your Email Address*"
+                  label="Your Email Address"
                   type="email"
                   placeholder="Enter Your Email"
                   bdclassName="mt-4 mb-10"
                   required="required"
+                  lbclassName="after:content-['*']  after:text-black"
                 />
                 <Input
-                  label="Organization*"
+                  label="Organization"
                   type="text"
                   placeholder="Enter your organization"
                   bdclassName="mt-4 mb-10"
                   required="required"
+                  lbclassName="after:content-['*']  after:text-black"
                 />
                 <Input
                   label="Position"
@@ -47,11 +50,12 @@ function RequestCatelog() {
                   bdclassName="mt-4 mb-10"
                 />
                 <Input
-                  label="Address*"
+                  label="Address"
                   type="text"
                   placeholder="Your address"
                   bdclassName="mt-4 mb-10"
                   required="required"
+                  lbclassName="after:content-['*']  after:text-black"
                 />
               </div>
               <div>

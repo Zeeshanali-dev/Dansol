@@ -19,32 +19,36 @@ function OpenAccount() {
                 </div>
                 <div className="block lg:grid grid-cols-2 gap-7 mb-12">
                   <Input
-                    label="Registered Business Name*"
+                    label="Registered Business Name"
                     type="text"
                     placeholder="Enter your business name"
                     bdclassName=""
                     required="required"
+                    lbclassName="after:content-['*']  after:text-black"
                   />
                   <Input
-                    label="Trending Name*"
+                    label="Trending Name"
                     type="text"
                     placeholder="Your trending name"
                     bdclassName=""
                     required="required"
+                    lbclassName="after:content-['*']  after:text-black"
                   />
                   <Input
-                    label="Business Email Address*"
+                    label="Business Email Address"
                     type="text"
                     placeholder="Enter your email"
                     bdclassName=""
                     required="required"
+                    lbclassName="after:content-['*']  after:text-black"
                   />
                   <Input
-                    label="Name of Proprietori(s) *"
+                    label="Name of Proprietori(s)"
                     type="text"
                     placeholder="Your proprietary name"
                     bdclassName=""
                     required="required"
+                    lbclassName="after:content-['*']  after:text-black"
                   />
                 </div>
                 <div className="mb-12">
@@ -55,7 +59,7 @@ function OpenAccount() {
                   </div>
                   <div>
                     <Input
-                      label="Suite/Unit No "
+                      label="Suite/Unit No"
                       type="text"
                       placeholder="Enter Unit no"
                       bdclassName="mb-5"
@@ -64,44 +68,48 @@ function OpenAccount() {
                   </div>
                   <div className="block lg:grid grid-cols-2 gap-7 ">
                     <Input
-                      label="Street *"
+                      label="Street"
                       type="text"
                       placeholder="Your street"
                       bdclassName="mb-5 md:mb-0"
                       required="required"
+                      lbclassName="after:content-['*']  after:text-black"
                     />
                     <Input
-                      label="Postal Code* "
+                      label="Postal Code"
                       type="text"
                       placeholder="Your code"
                       bdclassName="mb-5 md:mb-0"
                       required="required"
+                      lbclassName="after:content-['*']  after:text-black"
                     />
                     <Input
-                      label="City*"
+                      label="City"
                       type="text"
                       placeholder="Your city"
                       bdclassName="mb-5 md:mb-0"
                       required="required"
+                      lbclassName="after:content-['*']  after:text-black"
                     />
                     <Input
-                      label="State*"
+                      label="State"
                       type="text"
                       placeholder="Your state"
                       bdclassName="mb-5 md:mb-0"
                       required="required"
+                      lbclassName="after:content-['*']  after:text-black"
                     />
                   </div>
                 </div>
                 <div className="mb-12">
                   <div>
                     <h2 className="font-bold text-[28px] mb-6">
-                      Delivery address{" "}
+                      Delivery address
                     </h2>
                   </div>
                   <div>
                     <Input
-                      label="Suite/Unit No "
+                      label="Suite/Unit No"
                       type="text"
                       placeholder="Yur building"
                       bdclassName="mb-5"
@@ -117,7 +125,7 @@ function OpenAccount() {
                       required="required"
                     />
                     <Input
-                      label="Postal Code "
+                      label="Postal Code"
                       type="text"
                       placeholder="Your code"
                       bdclassName="mb-5 md:mb-0"
@@ -147,11 +155,12 @@ function OpenAccount() {
                   </div>
                   <div className="block lg:grid grid-cols-2 gap-7 ">
                     <Input
-                      label="Phone*"
+                      label="Phone"
                       type="text"
                       placeholder="Enter your phone"
                       bdclassName="mb-5 md:mb-0"
                       required="required"
+                      lbclassName="after:content-['*']  after:text-black"
                     />
                     <Input
                       label="Fax"
@@ -161,11 +170,12 @@ function OpenAccount() {
                       required=""
                     />
                     <Input
-                      label="Email*"
+                      label="Email"
                       type="text"
                       placeholder="Enter your email"
                       bdclassName="mb-5 md:mb-0"
                       required="required"
+                      lbclassName="after:content-['*']  after:text-black"
                     />
                   </div>
                 </div>
@@ -177,7 +187,7 @@ function OpenAccount() {
                   </div>
                   <div>
                     <Input
-                      label="How long has the business been established? "
+                      label="How long has the business been established?"
                       type="text"
                       placeholder=""
                       bdclassName="mb-5"

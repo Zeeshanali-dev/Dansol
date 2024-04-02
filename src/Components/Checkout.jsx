@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "./Container";
 import Input from "./reuseables/Input";
 import Button from "./reuseables/Button";
@@ -7,6 +7,15 @@ import { Link } from "react-router-dom";
 import PayPal from "../assets/PayPal.png";
 
 function Checkout() {
+  const [ischecked, setChecked] = useState(false)
+  
+  const handleRadioChange = () => {
+    if (ischecked) {
+      setChecked(false)
+    } else {
+      setChecked(true)
+    }
+  };
   return (
     <>
       <section>
@@ -33,71 +42,80 @@ function Checkout() {
                         </div>
                         <div className="block xl:grid grid-cols-2 gap-7 mb-5">
                           <Input
-                            label="Registered Business Name*"
+                            label="Registered Business Name"
                             type="text"
                             placeholder="Enter your business name"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                           <Input
-                            label="Trending Name*"
+                            label="Trending Name"
                             type="text"
                             placeholder="Your trending name"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                           <Input
-                            label="Business Email Address*"
+                            label="Business Email Address"
                             type="text"
                             placeholder="Enter your email"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                           <Input
-                            label="Name of Proprietori(s) *"
+                            label="Name of Proprietori(s)"
                             type="text"
                             placeholder="Your proprietary name"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                         </div>
                         <div>
                           <Input
-                            label="Suite/Unit No "
+                            label="Suite/Unit No"
                             type="text"
                             placeholder="Enter Unit no"
                             bdclassName="mb-5"
                             required="required"
+
                           />
                         </div>
                         <div className="block xl:grid grid-cols-2 gap-7 mb-5">
                           <Input
-                            label="Registered Business Name*"
+                            label="Registered Business Name"
                             type="text"
                             placeholder="Enter your business name"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                           <Input
-                            label="Trending Name*"
+                            label="Trending Name"
                             type="text"
                             placeholder="Your trending name"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                           <Input
-                            label="Business Email Address*"
+                            label="Business Email Address"
                             type="text"
                             placeholder="Enter your email"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                           <Input
-                            label="Name of Proprietori(s) *"
+                            label="Name of Proprietori(s)"
                             type="text"
                             placeholder="Your proprietary name"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                         </div>
                         <div>
@@ -110,7 +128,7 @@ function Checkout() {
                           <textarea
                             name=""
                             id="comments"
-                            className="rounded-md px-4 py-4 mt-2 w-full outline-none h-28"
+                            className="rounded-md px-4 py-4 mt-2 w-full outline-none h-28 resize-none"
                             placeholder="Comments.."
                           ></textarea>
                         </div>
@@ -130,11 +148,12 @@ function Checkout() {
                             required="required"
                           />
                           <Input
-                            label="Company Name*"
+                            label="Company Name"
                             type="text"
                             placeholder="Company"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                         </div>
                         <div>
@@ -169,11 +188,12 @@ function Checkout() {
                             required="required"
                           />
                           <Input
-                            label="Country  *"
+                            label="Country"
                             type="text"
                             placeholder="Y"
                             bdclassName="mb-5 md:mb-0"
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
                         </div>
                       </div>
@@ -264,76 +284,93 @@ function Checkout() {
                         <img src={PayPal} alt="" />
                       </li>
                       <li className="flex items-center mt-3">
-                        <input
+                        <div>
+                          <input
                           type="radio"
                           name="business"
                           id=""
-                          className="w-[28px] h-[28px] mr-2"
+                            className="w-[28px] h-[28px] mr-2"
+                            onChange={handleRadioChange}
+                          checked={ischecked}
                         />
-                        <span className="text-[15px] font-bold ">
-                          Credit Cart (Stripe)
-                        </span>
-
+                        </div>
+                        <div className="flex justify-between gap-2 ">
+                            <div>
+                                <span className="text-[15px] font-bold ">
+                                Credit Cart (Stripe)
+                              </span>
+                            </div>
+                          <div className="flex flex-wrap">
+                            <img src={PayPal} alt="" className="ml-2 " />
                         <img src={PayPal} alt="" className="ml-2" />
                         <img src={PayPal} alt="" className="ml-2" />
                         <img src={PayPal} alt="" className="ml-2" />
-                        <img src={PayPal} alt="" className="ml-2" />
+                        </div>
+                          
+                        </div>
+                        
                       </li>
                     </ul>
-                    <div className="mt-4">
-                      <Input
-                        label="Card holder *"
-                        type="text"
-                        placeholder="Diana Palavandishvili"
-                        bdclassName="mb-2 "
-                        required="required"
-                      />
-                      <Input
-                        label="Card mumber *"
-                        type="text"
-                        placeholder="4224 4224 4224 4224"
-                        bdclassName="mb-2 "
-                        required="required"
-                      />
-                      <div className="grid grid-cols-3 gap-4 ">
-                        <div className="col-span-2">
+                    {ischecked && (<div>
+                          <div className="mt-4">
                           <Input
-                            label="Expiration month and year *"
+                            label="Card holder"
                             type="text"
-                            placeholder="05/2027"
-                            bdclassName="mb-2 md-0"
+                            placeholder="Diana Palavandishvili"
+                            bdclassName="mb-2 "
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
-                        </div>
-                        <div>
                           <Input
-                            label="CVC"
+                            label="Card mumber"
                             type="text"
-                            placeholder="754"
-                            bdclassName="mb-2 md-0"
+                            placeholder="4224 4224 4224 4224"
+                            bdclassName="mb-2 "
                             required="required"
+                            lbclassName="after:content-['*']  after:text-black"
                           />
+                          <div className="grid grid-cols-3 gap-4 ">
+                            <div className="col-span-2">
+                              <Input
+                                label="Expiration month and year *"
+                                type="text"
+                                placeholder="05/2027"
+                                bdclassName="mb-2 md-0"
+                                required="required"
+                              />
+                            </div>
+                            <div>
+                              <Input
+                                label="CVC"
+                                type="text"
+                                placeholder="754"
+                                bdclassName="mb-2 md-0"
+                                required="required"
+                              />
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center mt-4">
-                      <div>
-                        <input
-                          type="checkbox"
-                          name=""
-                          id="privacyp"
-                          className="mr-2 w-[24px] h-[24px]"
-                        />
-                      </div>
-                      <label htmlFor="privacyp">
-                        I have read and agree to the website <br />
-                        <span className="underline">Terms and Conditions</span>
-                      </label>
-                    </div>
+                        <div className="flex items-center mt-4">
+                          <div>
+                            <input
+                              type="checkbox"
+                              name=""
+                              id="privacyp"
+                              className="mr-2 w-[24px] h-[24px]"
+                            />
+                          </div>
+                          <label htmlFor="privacyp">
+                            I have read and agree to the website <br />
+                            <span className="underline">Terms and Conditions</span>
+                          </label>
+                        </div>
+                    </div>)}
                   </div>
                   <div className="px-4 py-4">
                     <Link to="/checkout">
-                      <Button classname="w-full py-3">place Order</Button>
+                      <button   className={`flex justify-center items-center rounded-md text-white px-4 py-4 w-full ${!ischecked ? 'bg-gray-300' : 'bg-gradient-to-r from-[#307BC9] to-[#3C59A5] hover:bg-gradient-to-r hover:from-[#5a95d4] hover:to-[#2d437a] transition-all duration-500 '}   `}>
+                      Place Order
+                      </button>
                     </Link>
                   </div>
                 </div>

@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 
-@layer base {
+ @layer base {
+    @font-face {
+      font-family: 'ProductSansRegular';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/src/fonts/ProductSansRegular.ttf) format('ttf');
+    }
+    @font-face {
+        font-family: 'ProductSansBold';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/src/fonts/ProductSansBold.ttf) format('ttf');
+      }
     html {
-        font-family: "PT Sans", sans-serif;
+        font-family: "ProductSansRegular", sans-serif;
     }
   }

@@ -6,11 +6,12 @@ function Input({
   className = '',
   type,
   placeholder,
-  bdclassName ='',
+  bdclassName = '',
+  lbclassName='',
 }) {
   return (
       <div className={`${bdclassName}`}>
-      <label htmlFor={`${label}`} className="text-[15px] leading-[18px]  mb-2 font-normal" >{`${label}`} </label>
+      <label htmlFor={`${label}`} className={`text-[15px] leading-[18px]  mb-2 font-normal ${lbclassName}`} >{`${label}`} </label>
       <input
         type={`${type}`}
         required={required}

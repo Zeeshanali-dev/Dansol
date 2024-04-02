@@ -11,12 +11,12 @@ function ProductDs({item ,handleAddCart,showpopup}) {
                <div className='mx-auto max-w-48 min-h-[230px] lg:max-w-full'>
                     <img src={item.Image} alt="" className='mx-auto'/>
         </div>
-        <div className='px-1 md:px-4  text-center'><p className='text-[14px] sm:text-[14px] lg:text-[14px]  my-4'>{item.Pname}</p></div>
-        <div className='text-center my-3'><p className='text-[#6F7985] font-bold text-[18px]'>SKU: {item.SKU}</p></div>
+        <div className='px-1 md:px-4  text-center'><p className='text-[14px] sm:text-[14px] lg:text-[14px]  mb-3 px-2'>{item.Pname}</p></div>
+        <div className='text-center my-3'><p className='text-[#6F7985] font-bold text-[18px] mb-6'>SKU: {item.SKU}</p></div>
         <div className='flex justify-between items-center'>
-          <div className='px-1 md:px-4  text-center'>
+          <div className='   text-center'>
              
-          <span className='font-bold text-[20px] pl-2 '>{item.price }$</span>
+          <span className='font-bold text-[20px]  '>${item.price }</span>
         </div>
         <Button  classname=" w-[50px] h-[50px] p-3" onClick={handleAddCart} item={item}> 
         <img src={shoppingcart} alt=""   />

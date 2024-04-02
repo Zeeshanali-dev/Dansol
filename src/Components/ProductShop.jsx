@@ -22,35 +22,39 @@ function ProductShop() {
           <div className="my-3 ">
             Home / Shop / Dental / Tweezers & Forceps / General Tweezers
           </div>
-          <div className="flex flex-wrap justify-between mt-6 items-center mb-3">
+          <div className="flex flex-wrap justify-between mt-8 items-center mb-6">
             <div className="flex order-2 sm:order-1">
               <h2 className="font-bold text-[32px]">General Tweezers</h2>
             </div>
             <div className=" flex flex-wrap items-center order-1 sm:order-2">
-              <span className="text-[15px] font-normal mr-8 hidden sm:block">
+              <span className="text-[15px] font-normal mr-12 hidden sm:block">
                 {detailP.length} Results
               </span>
-              <div className="flex items-center mr-8">
-                <span>Sort &nbsp;</span>
+              <div className="flex items-center mr-12">
+                <span className="text-[15px] mr-7">Sortby &nbsp;</span>
+                <div>
                 <SelectOpt
                   options={sort}
                   isSearchable={false}
                   isClearable={false}
                 />
+                </div>
               </div>
               <div className="flex items-center">
-                <span>Show &nbsp;</span>
+                <span className="text-[15px]">Show &nbsp;</span>
+                <div>
                 <SelectOpt
                   options={pages}
                   isSearchable={false}
                   isClearable={false}
                 />
-                <span>&nbsp; Per page</span>
+                </div>
+                <span className="text-[15px]">&nbsp; Per page</span>
               </div>
             </div>
           </div>
           {/* // mapping the Product */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mb-20">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-11 mb-20">
             {detailP.map((item) => (
               <ProductDs
                 item={item}

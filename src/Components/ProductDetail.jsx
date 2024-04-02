@@ -36,35 +36,37 @@ function ProductDetail() {
   return (
     <Container>
       <div className="relative">
-        <div className="my-3">
-          {" "}
+        <div className="mt-2 text-[15px]">
+          
           Home / <span>{PDdetail.map((pname) => pname.name)}</span>
         </div>
+        <div className="">
         {PDdetail.map((item) => (
-          <div className="flex flex-col lg:flex-row my-9" key={item.id}>
+          <div className="flex flex-col lg:flex-row my-6" key={item.id}>
             <div className="w-full h-[450px] lg:h-[620px] lg:w-1/2 bg-slate-200 px-5 py-16">
               <img src={item.Image} alt="" className="mx-auto h-[100%]" />
             </div>
             <div
-              className="w-full lg:w-1/2 lg:px-16  lg:top-0 lg:mt-0 mt-10"
+              className="w-full lg:w-1/2 lg:px-[67px]  lg:top-0 lg:mt-0 mt-10"
               key={item.id}
             >
-              <div className="mb-6">
-                <h2 className="text-2xl md:text-3xl ">{item.name}</h2>
-                <div className="my-4">
-                  <span className="line-through text-[24px] text-slate-400 mr-3">
+              <div className="mb-7">
+                <h2 className="text-2xl md:text-[32px] -tracking-[0.5px] ">{item.name}</h2>
+                <div className="mt-4 mb-3">
+                  <span className="line-through text-[24px] text-slate-400 mr-7">
                     ${item.dicPrice}
                   </span>
-                  <span className="text-[24px] text-[#2367AE] font-bold">
+                  <span className="text-[32px] text-[#2367AE] font-bold">
                     ${item.Price}
                   </span>
                 </div>
                 <p className="text-[15px] font-medium">{item.proDetail}</p>
               </div>
               <div className="flex justify-between gap-2 bg-white">
-                <div className="w-[33%] sm:w-[20%] lg:w-[32%] flex border justify-between lg:justify-normal">
+                <div className="w-[33%] sm:w-[20%] lg:w-[43%]  flex border botder-[#B9B9C4] rounded-md justify-between lg:justify-normal">
+                  <div className="w-full flex justify-between">
                   <span
-                    className={`block border bg-slate-300  font-bold py-2 px-3 cursor-pointer ${
+                    className={`block border bg-[#F0F2F6]font-bold py-[12px] px-3 cursor-pointer ${
                       counter == 1
                         ? "opacity-50 pointer-events-none select-none"
                         : "opacity-100"
@@ -73,22 +75,23 @@ function ProductDetail() {
                   >
                     -
                   </span>
-                  <span className="text-center flex justify-center items-center px-4">
+                  <span className="text-center flex justify-center items-center px-6">
                     {counter}
                   </span>
                   <span
-                    className={`block border bg-slate-300  font-bold py-2 px-3 cursor-pointer `}
+                    className={`block border bg-[#F0F2F6]  font-bold py-[12px]  px-3 cursor-pointer `}
                     onClick={increment}
                   >
                     +
                   </span>
+                 </div>
                 </div>
-                <button className="border bg-[#2367AE] text-white rounded-md font-bold py-2 w-full  flex justify-center items-center">
+                <button className="border bg-[#2367AE] text-white rounded-md font-bold py-[12px]  w-full  flex justify-center items-center">
                   <img src={shopping_cartbtn} alt="" className="mr-6" />
                   Add to Cart
                 </button>
                 <div
-                  className={`border bg-slate-300 rounded-md font-bold py-2 px-2 cursor-pointer hidden lg:block`}
+                  className={`border bg-[#F0F2F6] rounded-md font-bold py-2 px-2 cursor-pointer hidden lg:flex w-[20%] justify-center items-center`}
                   onClick={changeColor}
                 >
                   <Heartlogo color={color} />
@@ -96,24 +99,24 @@ function ProductDetail() {
               </div>
               <div className="flex flex-row py-3 gap-2">
                 <div
-                  className={`border my-3 bg-slate-300 rounded-md font-bold py-3 px-2 cursor-pointer lg:hidden`}
+                  className={`border my-3 bg-[#F0F2F6] rounded-md font-bold py-3 px-2 cursor-pointer flex w-[20%] sm:w-[10%] justify-center items-center lg:hidden`}
                   onClick={changeColor}
                 >
                   <Heartlogo color={color} />
                 </div>
-                <button className="my-3 border bg-slate-300 rounded-md font-bold py-3 w-full">
+                <button className="mt-3  bg-[#F0F2F6] rounded-md font-bold py-3 w-full">
                   {" "}
                   Distribution Enquiry
                 </button>
               </div>
-              <div className="mt-4">
-                <div>
+              <div className="mt-3 ">
+                <div className="text-[15px] mb-1">
                   SKU: <span className="font-bold">{item.sku}</span>
                 </div>
-                <div>
-                  Categories :{" "}
+                <div className="text-[14px] mb-1">
+                  Categories:
                   {item.categories.map((itemcate) => (
-                    <span className="font-bold" key={id}>
+                    <span className="font-bold text-[14px]" key={id}>
                       {itemcate},&nbsp;
                     </span>
                   ))}
@@ -140,11 +143,11 @@ function ProductDetail() {
                   <div
                     className={`  overflow-hidden ${
                       open
-                        ? "h-32 transition-all ease-in duration-700"
+                        ? "h-28 transition-all ease-in duration-700"
                         : "h-0 transition-all ease-in duration-700"
                     }`}
                   >
-                    <ul className="mb-5">
+                    <ul className="">
                       {item.description.map((detail) => (
                         <li className="ml-2 text-[14px]" key={id}>
                           {detail}
@@ -159,7 +162,7 @@ function ProductDetail() {
                   className="flex justify-between items-center cursor-pointer"
                   onClick={() => setOpen1(!open1)}
                 >
-                  <h2 className="text-[22px] font-bold py-5">Shopping Info</h2>
+                  <h2 className="text-[22px] font-bold py-4">Shopping Info</h2>
                   <div className="mr-3">{open1 ? "➖" : "➕"}</div>
                 </div>
                 <div
@@ -179,6 +182,7 @@ function ProductDetail() {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </Container>
   );

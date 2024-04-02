@@ -10,54 +10,54 @@ import PI2 from "../assets/PI2.png";
 import PI3 from "../assets/PI3.png";
 
 function RelatedProduct() {
-  const options = {
-    margin: 30,
-    responsiveClass: true,
-    nav: true,
-    dots: false,
-    autoplay: false,
-    smartSpeed: 1000,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      400: {
-        items: 2,
-      },
-      600: {
-        items: 2,
-      },
-      767: {
-        items: 2,
-      },
-      800: {
-        items: 3,
-      },
+  // const options = {
+  //   margin: 30,
+  //   responsiveClass: true,
+  //   nav: true,
+  //   dots: false,
+  //   autoplay: false,
+  //   smartSpeed: 1000,
+  //   responsive: {
+  //     0: {
+  //       items: 2,
+  //     },
+  //     400: {
+  //       items: 2,
+  //     },
+  //     600: {
+  //       items: 2,
+  //     },
+  //     767: {
+  //       items: 2,
+  //     },
+  //     800: {
+  //       items: 3,
+  //     },
 
-      1000: {
-        items: 3,
-      },
-      1200: {
-        items: 4,
-      },
-    },
-  };
+  //     1000: {
+  //       items: 3,
+  //     },
+  //     1200: {
+  //       items: 4,
+  //     },
+  //   },
+  // };
 
   return (
-    <div className="lg:container lg:mx-auto lg:px-5 2xl:max-w-custom">
-      <div className="pt-14 relative ">
-        <div className="px-5">
+    <div className="lg:container lg:mx-auto  2xl:max-w-custom px-2 lg:px-0">
+      <div className="pt-[52px] relative ">
+        <div className="">
           <h2 className="text-[32px] md:text-[40px] font-bold">
-            Related Products
+            Related products
           </h2>
         </div>
 
-        <div className="mt-6 cursor-pointer">
-          <OwlCarousel className="owl-theme " {...options}>
+        <div className="mt-[70px] cursor-pointer grid grid-cols-2 lg:grid-cols-4 gap-11">
+          {/* <OwlCarousel className="owl-theme " {...options}> */}
             {detailP.map((item) => (
               <ProductDs item={item} />
             ))}
-          </OwlCarousel>
+          {/* </OwlCarousel> */}
         </div>
       </div>
     </div>
@@ -99,20 +99,5 @@ const detailP = [
     SKU: "106-18",
     qty: 1,
   },
-  {
-    id: 5,
-    Image: PI2,
-    Pname: "Ridge Mapping Caliper 0-25mm Scale",
-    price: "50.00",
-    SKU: "106-17",
-    qty: 1,
-  },
-  {
-    id: 6,
-    Image: PI3,
-    Pname: "Ridge Mapping Caliper 0-25mm Scale",
-    price: "50.00",
-    SKU: "106-29",
-    qty: 1,
-  },
+  
 ];

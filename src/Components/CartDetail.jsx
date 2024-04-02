@@ -78,7 +78,7 @@ function CartDetail() {
             <div className="my-3">
               Home / <span>Cart</span>
             </div>
-            <div className="my-8 font-bold text-3xl tracking-[3%]">
+            <div className="my-9 font-bold text-[32px] tracking-[3%]">
               Cart Page
             </div>
           </div>
@@ -87,7 +87,7 @@ function CartDetail() {
               CART IS EMPTY <br /> Please Add Something in cart
             </div>
           ) : (
-            <div className="flex items-start flex-col lg:flex-row gap-3 mb-20 md:pb-20">
+            <div className="flex items-start flex-col lg:flex-row gap-7 mb-20 md:pb-20">
               <div className="rounded-xl bg-[#F0F3F7] px-6 py-7 w-full xl:w-2/3 border border-[#C8CDD5] mb-10 md:mb-0">
                 {cartData.map((item) => (
                   <div className="mb-5" key={item.id}>
@@ -102,7 +102,7 @@ function CartDetail() {
                               <CloseIcon />
                             </div>
                           </td>
-                          <td className="py-3 md:px-2 align-top md:align-baseline">
+                          <td className="py-2 md:px-2 align-top md:align-baseline">
                             <div className="ml-2 w-[72px] h-[72px] sm:w-24 sm:h-24 ">
                               <img
                                 src={item.Image}
@@ -111,7 +111,7 @@ function CartDetail() {
                               />
                             </div>
                           </td>
-                          <td className="py-1 md:py-3 md:px-2 md:min-w-[320px] lg:min-w-[280px] xl:min-w-[410px] ">
+                          <td className="py-1 md:py-2 md:px-2 md:min-w-[320px] lg:min-w-[280px] xl:min-w-[410px] ">
                             <div className="flex flex-col pl-2  md:items-start font-bold text-[15px] md:text-[18px] ml-2">
                               <div className="  md:px-0 pr-[50px] sm:pr-0">
                                 {item.Pname}
@@ -145,7 +145,7 @@ function CartDetail() {
                             </div>
                           </td>
 
-                          <td className="py-3 md:px-2 sm:align-top text-center align-bottom absolute bottom-0 right-0 sm:static ">
+                          <td className="py-2 md:px-2 sm:align-top text-center align-bottom absolute bottom-0 right-0 sm:static ">
                             <div className="flex items-center flex-col sm:flex-row">
                               <div className="font-medium text-[14px]  min-w-[65px]  ">
                                 Unit Price
@@ -174,8 +174,8 @@ function CartDetail() {
                     <button
                       className={`${
                         disable
-                          ? "bg-black text-white"
-                          : "bg-[#B9B9C4] text-black"
+                          ? "bg-[#292D32] text-white"
+                          : "bg-[#B9B9C4] text-[#292D32]"
                       }  flex items-center  px-4 py-[12px] text-bold rounded-r-lg absolute right-0 md:-right-[126px] cursor-pointer`}
                     >
                       Apply Coupon

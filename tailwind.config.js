@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       maxWidth: {
-        custom: '1320px', // Set your custom width here
+        custom: '1336px', // Set your custom width here
       },
     },
   },

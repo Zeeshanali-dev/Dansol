@@ -2,7 +2,7 @@
     position: absolute;
     top: -76px;
     right: 18px;
-    display: flex;
+    display: none;
 }
 .owl-nav>button {
     width: 30px;
