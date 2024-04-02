@@ -63,10 +63,10 @@ function ProductDetail() {
                 <p className="text-[15px] font-medium">{item.proDetail}</p>
               </div>
               <div className="flex justify-between gap-2 bg-white">
-                <div className="w-[33%] sm:w-[20%] lg:w-[43%]  flex border botder-[#B9B9C4] rounded-md justify-between lg:justify-normal">
+                <div className="w-[33%] sm:w-[20%] lg:w-[43%]  flex border border-[#B9B9C4] rounded-md justify-between lg:justify-normal">
                   <div className="w-full flex justify-between">
                   <span
-                    className={`block border bg-[#F0F2F6]font-bold py-[12px] px-3 cursor-pointer ${
+                    className={`block border bg-[#F0F2F6] font-bold py-[12px] px-3 cursor-pointer ${
                       counter == 1
                         ? "opacity-50 pointer-events-none select-none"
                         : "opacity-100"

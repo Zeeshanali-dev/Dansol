@@ -51,10 +51,10 @@ function Footer() {
                   instruments worldwide
                 </p>
 
-                <ul className="flex mt-7">
+                <ul className="flex mt-16">
                   {footSocial.map((icon) => (
                     <li
-                      className="mr- hover:-translate-y-2 transition-all duration-300"
+                      className="mr-8 hover:-translate-y-2 transition-all duration-300"
                       key={icon.id}
                     >
                       <a href={icon.href}>

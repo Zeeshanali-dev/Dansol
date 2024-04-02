@@ -30,7 +30,7 @@ function Checkout() {
           </div>
           <div className="my-28">
             <form action="">
-              <div className="flex items-start flex-col lg:flex-row gap-3 mb-20 md:pb-20">
+              <div className="flex items-start flex-col lg:flex-row gap-6 mb-20 md:pb-20">
                 <div className="rounded-xl  w-full xl:w-2/3  mb-10 md:mb-0">
                   <div>
                     <div className="px-6 py-8 md:px-28 md:py-10 lg:px-5 lg:py-8 bg-[#F0F3F7] rounded-[10px] border border-[#C8CDD5] ">
