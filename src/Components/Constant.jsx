@@ -4,7 +4,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "Surgical Instruments",
+        Head: " Instruments",
         sublink: [
           { name: "Gracy Curettes", link: "/" },
           { name: "Peridontal Probes", link: "/" },
@@ -144,7 +144,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: "Surgical Instruments",
+        Head: "S Instruments",
         sublink: [
           { name: "Gracy Curettes", link: "/" },
           { name: "Peridontal Probes", link: "/" },
@@ -154,7 +154,7 @@ export const links = [
         ],
       },
       {
-        Head: "Micro Surgery",
+        Head: "Mio Surgery",
         sublink: [
           { name: "Gracy Curettes", link: "/" },
           { name: "Peridontal Probes", link: "/" },
@@ -176,7 +176,7 @@ export const links = [
       {
         Head: "Diagnostic",
         sublink: [
-          { name: "Gracy Curettes", link: "/" },
+          { name: "Gracy Curtes", link: "/" },
           { name: "Peridontal Probes", link: "/" },
           { name: "Gingivectomy Knives", link: "/" },
           { name: "Scalers", link: "/" },

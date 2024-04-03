@@ -33,21 +33,21 @@ function ProductShop() {
               <div className="flex items-center mr-12">
                 <span className="text-[15px] mr-7">Sortby &nbsp;</span>
                 <div>
-                <SelectOpt
-                  options={sort}
-                  isSearchable={false}
-                  isClearable={false}
-                />
+                  <SelectOpt
+                    options={sort}
+                    isSearchable={false}
+                    isClearable={false}
+                  />
                 </div>
               </div>
               <div className="flex items-center">
                 <span className="text-[15px]">Show &nbsp;</span>
                 <div>
-                <SelectOpt
-                  options={pages}
-                  isSearchable={false}
-                  isClearable={false}
-                />
+                  <SelectOpt
+                    options={pages}
+                    isSearchable={false}
+                    isClearable={false}
+                  />
                 </div>
                 <span className="text-[15px]">&nbsp; Per page</span>
               </div>
@@ -146,6 +146,22 @@ const detailP = [
   },
   {
     id: 10,
+    Image: PI,
+    Pname: "Ridge Mapping Caliper 0-25mm Scale",
+    price: "50.00",
+    SKU: "106-29",
+    qty: 1,
+  },
+  {
+    id: 11,
+    Image: PI3,
+    Pname: "Ridge Mapping Caliper 0-25mm Scale",
+    price: "50.00",
+    SKU: "106-29",
+    qty: 1,
+  },
+  {
+    id: 12,
     Image: PI,
     Pname: "Ridge Mapping Caliper 0-25mm Scale",
     price: "50.00",
