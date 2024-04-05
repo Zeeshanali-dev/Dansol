@@ -9,6 +9,9 @@ function Nav2() {
   const [type, settype] = useState(false);
   const [value, setvalue] = useState("");
   const { cartData } = useSelector((state) => state.counter);
+  const defaultopen = links.map((link) => link.name);
+
+  const [heading, setHeading] = useState(defaultopen[0]);
   return (
     <>
       <div className="border-1  border-b border-t border-solid border-[#989DA5] md:block hidden">
@@ -28,7 +31,7 @@ function Nav2() {
                       <span className="cursor-pointer ml-4 group-hover/edit:rotate-180 transition-all duration-300">
                         <img src={down_arrow} alt="" />
                       </span>
-                      <div className="absolute top-[56px] bg-white  group-hover/edit:grid xl:gap-x-28 md:gap-x-10 xl:grid-cols-3 md:grid-cols-2 hidden left-0 xl:min-w-[1050px] md:min-w-[700px] px-[40px] py-[24px] shadow-lg border rounded-b-md rounded-r-md">
+                      <div className="absolute top-[56px] bg-white  group-hover/edit:grid xl:gap-x-28 md:gap-x-10 xl:grid-cols-3 md:grid-cols-2  left-0 xl:min-w-[1050px] md:min-w-[700px] px-[40px] py-[24px] shadow-lg border rounded-b-md rounded-r-md">
                         {tab.submenu &&
                           tab.sublinks.map((slink) => (
                             <div>

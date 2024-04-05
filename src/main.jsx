@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import MobileNav from "./Components/MobileNav.jsx";
 import {
   Route,
   RouterProvider,
@@ -20,13 +19,14 @@ import Checkout from "./Components/Checkout.jsx";
 import RequestCatelog from "./Components/RequestCatelog.jsx";
 import OpenAccount from "./Components/OpenAccount.jsx";
 import Blogs from "./Components/blogs/Blogs.jsx";
+import Main from "./Components/Main.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<Detailpage />} />
+      <Route path="" element={<Main />} />
+      <Route path="detailpage" element={<Detailpage />} />
       <Route path="cart" element={<Cart />} />
-      <Route path="mobilenav" element={<MobileNav />} />
       <Route path="shoppage" element={<Shoppage />} />
       <Route path="eventlisting" element={<EventListings />} />
       <Route path="eventdetail" element={<EventDetails />} />
