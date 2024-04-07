@@ -25,13 +25,31 @@ function Nav2() {
               </span>
               <div className="absolute bg-[#C3DAF5]  -bottom-[55px] -left-[3px] hidden group-hover/item:flex text-black  min-w-[522px]  z-10 ">
                 {links.map((tab) => (
-                  <div>
-                    <div className="px-[47px] hover:bg-[#E1E7F0] py-4 flex items-center group/edit ">
+                  <div
+                    onClick={() =>
+                      heading !== tab.name
+                        ? setHeading(tab.name)
+                        : setHeading("")
+                    }
+                  >
+                    <div
+                      className={`px-[47px] ${
+                        heading === tab.name ? "bg-[#E1E7F0]" : "bg-[#C3DAF5]"
+                      } flex  py-4 items-center group/edit `}
+                    >
                       {tab.name}
-                      <span className="cursor-pointer ml-4 group-hover/edit:rotate-180 transition-all duration-300">
+                      <span
+                        className={`cursor-pointer ml-4 ${
+                          heading === tab.name ? "rotate-180" : "rotate-0"
+                        } transition-all duration-300`}
+                      >
                         <img src={down_arrow} alt="" />
                       </span>
-                      <div className="absolute top-[56px] bg-white  group-hover/edit:grid xl:gap-x-28 md:gap-x-10 xl:grid-cols-3 md:grid-cols-2  left-0 xl:min-w-[1050px] md:min-w-[700px] px-[40px] py-[24px] shadow-lg border rounded-b-md rounded-r-md">
+                      <div
+                        className={`absolute top-[56px] bg-white ${
+                          heading === tab.name ? "grid" : "hidden "
+                        } xl:gap-x-28 md:gap-x-10 xl:grid-cols-3 md:grid-cols-2  left-0 xl:min-w-[1050px] md:min-w-[700px] px-[40px] py-[24px] shadow-lg border rounded-b-md rounded-r-md`}
+                      >
                         {tab.submenu &&
                           tab.sublinks.map((slink) => (
                             <div>

@@ -4,7 +4,7 @@ export const links = [
     submenu: true,
     sublinks: [
       {
-        Head: " Instruments",
+        Head: "1st Instruments",
         sublink: [
           { name: "Gracy Curettes", link: "/" },
           { name: "Peridontal Probes", link: "/" },
