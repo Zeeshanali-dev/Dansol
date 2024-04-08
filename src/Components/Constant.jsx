@@ -1,3 +1,6 @@
+import tabpic from "../assets/tabpic.png";
+import banner from "../assets/banner.png";
+
 export const links = [
   {
     name: "Dental Instruments",
@@ -278,5 +281,244 @@ export const links = [
         ],
       },
     ],
+  },
+];
+
+export const events = [
+  {
+    id: 1,
+    img: banner,
+    date: "06/02/24 00:00 - 08/02/24 00:00",
+    name: "Adex23 Melbourne",
+  },
+  {
+    id: 2,
+    img: banner,
+    date: "06/02/24 00:00 - 08/02/24 00:00",
+    name: "Adex23 Melbourne",
+  },
+  {
+    id: 3,
+    img: banner,
+    date: "06/02/24 00:00 - 08/02/24 00:00",
+    name: "Adex23 al",
+  },
+  {
+    id: 4,
+    img: banner,
+    date: "06/02/24 00:00 - 08/02/24 00:00",
+    name: "Adex23 Melbourne",
+  },
+];
+
+export const tabs = [
+  {
+    name: "Instrument Cassettes",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Extraction",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Needle Holders",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Orthodontic",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Scissors",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Tweezers & Forceps",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: " Sets & Kits",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Diagnostic",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Root Elevators",
+    product: [
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+      {
+        img: tabpic,
+        pname: "Extracting Forceps Kids",
+      },
+    ],
+  },
+  {
+    name: "Periodontology",
+    product: [],
   },
 ];
