@@ -1,11 +1,40 @@
+<<<<<<< HEAD:src/Pages/Main.jsx
 import React, { useEffect, useState } from "react";
 import Container from "../Components/Container";
+=======
+<<<<<<< HEAD
+import React, { Component } from "react";
+import Slider from "react-slick";
+=======
+import React, { useState } from "react";
+>>>>>>> e70ecc630d84ce7766ef9a4c4bcb7c4dbdb384b2
+import Container from "./Container";
+>>>>>>> 5cb04f176400304aae08d559cef2e66d4f0e2c5d:src/Components/Main.jsx
 import image2 from "../assets/image2.png";
 import banner from "../assets/banner.png";
 import Button from "../Components/reuseables/Button";
 import Layer_1 from "../assets/Layer_1.png";
 import Layer_2 from "../assets/Layer_2.png";
 import surgicalitem from "../assets/surgicalitem.png";
+<<<<<<< HEAD
+import Simg from "../assets/Simg.png";
+import Simg2 from "../assets/Simg2.png";
+
+const Main = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: true,
+    beforeChange: function (currentSlide, nextSlide) {
+      console.log("before change", currentSlide, nextSlide);
+    },
+    afterChange: function (currentSlide) {
+      console.log("after change", currentSlide);
+    },
+=======
 import featurep1 from "../assets/featurep1.png";
 import featurep2 from "../assets/featurep2.png";
 import { events, tabs } from "../Components/Constant";
@@ -35,6 +64,7 @@ const Main = () => {
   const handletabclick = (index) => {
     setActiveTab(index);
     setTabData(tabs[index]);
+>>>>>>> e70ecc630d84ce7766ef9a4c4bcb7c4dbdb384b2
   };
   return (
     <>
@@ -491,7 +521,150 @@ const Main = () => {
           </div>
         </Container>
       </div>
+<<<<<<< HEAD:src/Pages/Main.jsx
       {qrPopUp && <QRpopup setQrPopUp={setQrPopUp} />}
+=======
+      {/* // footer */}
+      <div className="bg-gradient-to-r from-[#327C9B] to-[#86DDD2] py-10">
+        <Container>
+          <div>
+            <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1 content-center items-center">
+              <div className=" col-start-2 md:col-start-1">
+                <img src={Simg2} alt="" />
+              </div>
+              <div className="col-start-1  row-start-1 row-span-2 md:col-start-2 md:row-span-1">
+                <div className="text-center ">
+                  <p className="text-[32px] lg:text-[61px] leading-[36.39px] lg:leading-[60.65px] text-[#292D32] font-bold">
+                    Sets & Kits
+                  </p>
+                  <p className="text-[17px] lg:text-[20px] leading-[17px] lg:leading-[24.25px] text-white my-2">
+                    Ends This Weekend
+                  </p>
+                  <p className="text-[20px] font-bold lg:text-[77px] leading-[24.26px] lg:leading-[80px] bg-[#292D32] text-[#7CE1EA] mx-3">
+                    BIG SALE
+                  </p>
+                  <p className="text-[20px] lg:text-[50px] leading-[24.26px] lg:leading-[60.65px] bg-white text-[#292D32]">
+                    Up to 50% off
+                  </p>
+                  <p className="text-[14px] lg:text-[20px] leading-[17px] lg:leading-[24.25px] text-white px-6 lg:px-0 mt-2">
+                    Use code DENSOL on select sale style
+                  </p>
+                </div>
+                <div className="flex mt-12 items-center justify-center">
+                  <button className="flex bg-[#292D32] text-white rounded py-2 px-4">
+                    SHOP NOW
+                    <span className="ml-4">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.43 5.92999L20.5 12L14.43 18.07"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M3.50008 12H20.3301"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="col-start-2  row-start-2 md:col-start-3 md:row-start-1">
+                <img src={Simg} alt="" />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      {/* slider */}
+      <div className="bg-gradient-to-r from-[#307BC9]  to-[#3C59A5]">
+        <Container>
+          <div>
+            <div>
+              <div>
+                <div></div>
+                <h2>We Care About Our Customers</h2>
+                <div>
+                  <svg
+                    width="96"
+                    height="89"
+                    viewBox="0 0 96 89"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="70.1298"
+                      height="70.1298"
+                      fill="white"
+                      fill-opacity="0.2"
+                    />
+                    <rect
+                      x="26.1814"
+                      y="19.2671"
+                      width="69.1298"
+                      height="69.1298"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <div className="slider-container">
+                  <Slider {...settings}>
+                    <div>
+                      <h3>1</h3>
+                    </div>
+                    <div>
+                      <h3>2</h3>
+                    </div>
+                    <div>
+                      <h3>3</h3>
+                    </div>
+                  </Slider>
+                </div>
+              </div>
+              <div>
+                <svg
+                  width="70"
+                  height="65"
+                  viewBox="0 0 70 65"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="51.0988"
+                    height="51.0988"
+                    fill="white"
+                    fill-opacity="0.15"
+                  />
+                  <rect
+                    x="19.2122"
+                    y="14.1743"
+                    width="50.0988"
+                    height="50.0988"
+                    stroke="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+>>>>>>> 5cb04f176400304aae08d559cef2e66d4f0e2c5d:src/Components/Main.jsx
     </>
   );
 };
