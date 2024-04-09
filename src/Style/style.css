@@ -1,0 +1,215 @@
+.owl-theme .owl-dots .owl-dot span {
+  background: #ffffff !important;
+  opacity: 0.1;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: white !important;
+  opacity: 1 !important;
+}
+
+ul.slick-dots {
+  position: absolute;
+  top: 115px;
+  right: -30px;
+  bottom: unset;
+  left: unset;
+  text-align: right;
+  display: flex !important;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  width: unset;
+}
+.slick-dots li.slick-active button::before {
+  color: white !important;
+  opacity: 1;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #ffffff;
+  border-radius: 50% !important;
+  content: "";
+  text-align: center;
+  color: white !important;
+  margin-bottom: 12px;
+}
+
+.slick-dots li {
+  margin: 9px 5px !important;
+}
+
+button.slick-arrow.slick-next {
+  bottom: 111px !important;
+  right: -23px;
+  z-index: 4;
+  top: unset;
+}
+
+button.slick-arrow.slick-prev {
+  position: absolute;
+  top: 75px;
+  left: unset;
+  z-index: 3;
+  right: -21px;
+}
+
+button.slick-arrow.slick-prev::before {
+  content: "";
+  background: url("../assets/uparrow.png");
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+button.slick-arrow.slick-next::before {
+  content: "";
+  background: url("../assets/downarrow.png");
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.banner {
+  background: url(../assets/image2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  background: linear-gradient(99.88deg, #307bc9 16.44%, #3c59a5 97.01%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.sale-section {
+  background: url(../assets/salebackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  mix-blend-mode: color;
+}
+.sale-section::before {
+  content: "";
+  background: linear-gradient(99.88deg, #327c9b 16.44%, #86ddd2 97.01%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.footer {
+  background: url(../assets/footer_url.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  mix-blend-mode: multiply;
+}
+.footer::before {
+  content: "";
+  background-color: #143b64e4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.testimonail::before {
+  content: "";
+  background: url(../assets/testimonailhead2.png);
+  position: absolute;
+  top: -11px;
+  left: -11px;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.testimonail::after {
+  content: "";
+  background: url(../assets/testimonialhead1.png);
+  position: absolute;
+  top: -11px;
+  right: -24px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.testimonial-slide::before {
+  content: "";
+  background: url(../assets/testimonialb.png);
+  position: absolute;
+  bottom: -63px;
+  left: -42px;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.testimonial-slide button.owl-prev > span {
+  display: none;
+}
+.testimonial-slide button.owl-next > span {
+  display: none;
+}
+.testimonial-slide button.owl-prev,
+.testimonial-slide button.owl-next {
+  position: relative;
+}
+.testimonial-slide button.owl-next::before {
+  content: "";
+  position: absolute;
+  background: url(../assets/arrow.png);
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: -27px;
+  left: 60px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.testimonial-slide button.owl-prev::before {
+  content: "";
+  position: absolute;
+  background: url(../assets/arrow.png);
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: -27px;
+  right: 60px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1024px) {
+  .testimonail::before {
+    top: 60px;
+    left: 16px;
+    width: 70px;
+    height: 70px;
+  }
+  .testimonail::after {
+    top: 144px;
+    right: 16px;
+    width: 70px;
+    height: 70px;
+  }
+  .testimonial-slide::before {
+    bottom: 7px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+  }
+}

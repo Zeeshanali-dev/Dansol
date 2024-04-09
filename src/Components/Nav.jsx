@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Logo_main from "../assets/Logo_main.png";
 import Container from "./Container";
 import { Link } from "react-router-dom";
@@ -14,8 +14,13 @@ function Nav() {
     setOpen(false);
   }, []);
 
+  const bodyRef = useRef();
+
+  console.log(bodyRef.current);
+
   const menuopen = () => {
     setOpen(true);
+    // ! never use document query selectors always use ref to select dom element
     window.document.querySelector("body").style.overflow = "hidden";
     setHeading(defaultopen[0]);
     setSubHeading("");
@@ -30,7 +35,7 @@ function Nav() {
   const [subHeading, setSubHeading] = useState("");
   return (
     <>
-      <div className="">
+      <div className="" ref={bodyRef}>
         <Container>
           <nav className="py-7 px-1">
             <div className="flex justify-between items-center">
@@ -278,6 +283,12 @@ function Nav() {
           </div>
           <div className="mt-6 mb-4">
             <div className="relative border border-[#989DA5] ">
+              {/* 
+              
+              // ! onChange={(e) => [setvalue(e.target.value), settype(true)]} = Wrong
+              // ? onChange={(e) => {setvalue(e.target.value); settype(true)}} = correct
+              
+              */}
               <input
                 type="text"
                 className={`w-full outline-none placeholder:text-[#989DA5] placeholder:text-[13px] ${

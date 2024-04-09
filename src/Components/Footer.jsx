@@ -9,7 +9,7 @@ import insta from "../assets/insta.svg";
 function Footer() {
   return (
     <>
-      <footer className="bg-[#143B64] pb-[30px]">
+      <footer className="pb-[30px] footer">
         <div className=" border-b border-white ">
           <Container>
             <div className="flex flex-col xl:flex-row items-center pb-8 xl:pb-0">
@@ -130,7 +130,9 @@ function Footer() {
                 <span>©Copyright Densol 2024</span>
               </div>
               <div className=" w-[58%] border-b border-white hidden lg:block mx-6"></div>
-              <span className="block mb-4">Designed & Developed By Tecmyer</span>
+              <span className="block mb-4">
+                Designed & Developed By Tecmyer
+              </span>
             </div>
           </Container>
         </div>

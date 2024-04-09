@@ -13,13 +13,13 @@ import Cart from "./Pages/Cart.jsx";
 import Shoppage from "./Pages/Shoppage.jsx";
 import { Provider } from "react-redux";
 import { store } from "./store/Store.jsx";
-import EventListings from "./Components/Events/EventListings.jsx";
-import EventDetails from "./Components/Events/EventDetails.jsx";
-import Checkout from "./Components/Checkout.jsx";
-import RequestCatelog from "./Components/RequestCatelog.jsx";
-import OpenAccount from "./Components/OpenAccount.jsx";
-import Blogs from "./Components/blogs/Blogs.jsx";
-import Main from "./Components/Main.jsx";
+import EventListings from "./Pages/EventListings.jsx";
+import EventDetails from "./Pages/EventDetails.jsx";
+import Checkout from "./Pages/Checkout.jsx";
+import RequestCatelog from "./Pages/RequestCatelog.jsx";
+import OpenAccount from "./Pages/OpenAccount.jsx";
+import Blogs from "./Pages/Blogs.jsx";
+import Main from "./Pages/Main.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
